@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>
+        <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
+         <link rel="stylesheet" href="draw.css">
+    </head>
+    <body>
+       <p class="c_picker" id="let">Let's draw...</p>
+       <input type="color" value="#ff0000" id="cr">
+       <div id="color_picker" class="color-picker"><i class="fa fa-eye-dropper"></i></div>
+       <button id="btn1"></button>
+       <button id="btn2"></button>
+       <button id="btn3"></button>
+       <button class="undo" id="undo">UNDO</button>
+       <button class="clear" id="clear">CLEAR</button>
+       <button class="eraser" id="eraser">ERASER</button>
+       <button class="bg_color" id="bg_color">BG COLOR</button>
+       <input type="color" value="#ffffff" id="bgc_picker">
+       <button class="add_text" id="add_text">ADD TEXT</button>
+       <button class="draw_brush" id="draw_brush">DRAW</button>
+       <button class="bg_effect" id="bg_effect">BG EFFECT</button>
+       <div class="size">
+           <input type="range" id="inp" min="1" max="60" value="2">
+           <p id="pen" class="pen">PEN SIZE</p>
+       </div>
+       
+       <canvas id="canvas"></canvas>
+       <script src="draw.js"></script>
+    </body>
+</html>
